@@ -165,6 +165,8 @@ Cuando haya funcionado, verás los indicadores con valores y las gráficas indic
 
 ![](https://github.com/hugoescalpelo/flow6-clima-api-docker-compose-mysql/blob/main/Imagenes/Screenshot%20from%202023-05-26%2002-42-00.png)
 
+![](https://github.com/hugoescalpelo/flow5-clima-api-docker-compose/blob/main/Imagenes/Screenshot%20from%202023-05-26%2001-19-39.png)
+
 ![]()
 
 **Consejo**: Intenta cambiar el rango de las gráficas historicas a 1 semana y deja el flow funcionando por varios días, observarás la dinamica de clima.
