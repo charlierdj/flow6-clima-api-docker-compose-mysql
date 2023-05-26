@@ -163,9 +163,9 @@ Para arrancar el entorno necesario, puedes usar los siguientes comandos.
 
 Cuando haya funcionado, verás los indicadores con valores y las gráficas indicando los cambios históricos. 
 
-![](https://github.com/hugoescalpelo/flow6-clima-api-docker-compose-mysql/blob/main/Imagenes/Screenshot%20from%202023-05-26%2002-42-00.png)
+![](https://github.com/hugoescalpelo/flow6-clima-api-docker-compose-mysql/blob/main/Imagenes/Screenshot%20from%202023-05-26%2002-52-33.png?raw=true)
 
-![](https://github.com/hugoescalpelo/flow6-clima-api-docker-compose-mysql/blob/main/Imagenes/Screenshot%20from%202023-05-26%2002-48-10.png)
+![](https://github.com/hugoescalpelo/flow6-clima-api-docker-compose-mysql/blob/main/Imagenes/Screenshot%20from%202023-05-26%2002-48-10.png?raw=true)
 
 ![]()
 
