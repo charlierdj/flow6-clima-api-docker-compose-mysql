@@ -204,7 +204,7 @@ Cuando haya funcionado, verás los indicadores con valores y las gráficas indic
 
         ```docker compose up -d```
 
-- **P**. ¿Còmo agrego un volumen que contenga el archivo de configuración y datos externos a MySQL?. **R**. Realiza los siguientes pasos.
+- **P**. ¿Cómo agrego un volumen que contenga el archivo de configuración y datos externos a MySQL?. **R**. Realiza los siguientes pasos.
 
     - Detener el contenedor de MySQL 
     
