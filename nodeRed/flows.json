@@ -15,13 +15,13 @@
         "topic": "codigoIoT/mqtt/clima",
         "qos": "0",
         "datatype": "utf8",
-        "broker": "f1868b0174764182",
+        "broker": "1cf4394e3811019a",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 150,
-        "y": 140,
+        "x": 170,
+        "y": 120,
         "wires": [
             [
                 "031307c1e8e521b1"
@@ -36,8 +36,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 390,
-        "y": 140,
+        "x": 410,
+        "y": 120,
         "wires": [
             [
                 "73a82c190323398d",
@@ -56,8 +56,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 140,
+        "x": 650,
+        "y": 120,
         "wires": [
             [
                 "f144210180dc338f",
@@ -76,8 +76,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 260,
+        "x": 640,
+        "y": 240,
         "wires": [
             [
                 "8f68b891b58fafa2",
@@ -109,8 +109,8 @@
         "seg2": "24",
         "diff": false,
         "className": "",
-        "x": 930,
-        "y": 140,
+        "x": 950,
+        "y": 120,
         "wires": []
     },
     {
@@ -137,8 +137,8 @@
         "seg2": "50",
         "diff": false,
         "className": "",
-        "x": 920,
-        "y": 260,
+        "x": 940,
+        "y": 240,
         "wires": []
     },
     {
@@ -179,8 +179,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 920,
-        "y": 200,
+        "x": 940,
+        "y": 180,
         "wires": [
             []
         ]
@@ -201,8 +201,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 410,
-        "y": 360,
+        "x": 430,
+        "y": 340,
         "wires": [
             [
                 "45db9f35ecf0bac4"
@@ -230,8 +230,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 360,
+        "x": 150,
+        "y": 340,
         "wires": [
             [
                 "61104f68265896c0"
@@ -246,8 +246,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 630,
-        "y": 360,
+        "x": 650,
+        "y": 340,
         "wires": [
             [
                 "3198da91d228fa8f",
@@ -266,8 +266,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 360,
+        "x": 970,
+        "y": 340,
         "wires": [
             []
         ]
@@ -276,15 +276,15 @@
         "id": "1980961be836b27e",
         "type": "function",
         "z": "4d8b63f9a305130a",
-        "name": "Humedad por API",
+        "name": "Humedad API",
         "func": "msg.payload = msg.payload.main.humidity;\nglobal.set (\"humAPI\", msg.payload);\nmsg.topic = \"Humedad\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 440,
+        "x": 960,
+        "y": 400,
         "wires": [
             []
         ]
@@ -295,8 +295,8 @@
         "z": "4d8b63f9a305130a",
         "name": "API",
         "info": "",
-        "x": 110,
-        "y": 320,
+        "x": 130,
+        "y": 300,
         "wires": []
     },
     {
@@ -305,7 +305,7 @@
         "z": "4d8b63f9a305130a",
         "name": "Local",
         "info": "",
-        "x": 110,
+        "x": 130,
         "y": 60,
         "wires": []
     },
@@ -320,8 +320,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 540,
+        "x": 440,
+        "y": 500,
         "wires": [
             [
                 "87db0ddf2dfebc9b"
@@ -334,8 +334,8 @@
         "z": "4d8b63f9a305130a",
         "name": "Enviador",
         "info": "",
-        "x": 120,
-        "y": 500,
+        "x": 140,
+        "y": 460,
         "wires": []
     },
     {
@@ -359,8 +359,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 540,
+        "x": 150,
+        "y": 500,
         "wires": [
             [
                 "99981403d8897310"
@@ -372,7 +372,7 @@
         "type": "mqtt out",
         "z": "4d8b63f9a305130a",
         "name": "",
-        "topic": "codigoIoT//mqtt/climaAPI",
+        "topic": "codigoIoT/mqtt/climaAPI",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -381,8 +381,8 @@
         "correl": "",
         "expiry": "",
         "broker": "f1868b0174764182",
-        "x": 690,
-        "y": 540,
+        "x": 710,
+        "y": 500,
         "wires": []
     },
     {
@@ -391,8 +391,8 @@
         "z": "4d8b63f9a305130a",
         "name": "Escuchador",
         "info": "",
-        "x": 130,
-        "y": 620,
+        "x": 150,
+        "y": 560,
         "wires": []
     },
     {
@@ -400,7 +400,7 @@
         "type": "mqtt in",
         "z": "4d8b63f9a305130a",
         "name": "",
-        "topic": "codigoIoT//mqtt/climaAPI",
+        "topic": "codigoIoT/mqtt/climaAPI",
         "qos": "2",
         "datatype": "utf8",
         "broker": "f1868b0174764182",
@@ -408,8 +408,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 170,
-        "y": 660,
+        "x": 190,
+        "y": 600,
         "wires": [
             [
                 "9b7dce3fc6b6e327"
@@ -424,12 +424,13 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 390,
-        "y": 660,
+        "x": 410,
+        "y": 600,
         "wires": [
             [
                 "5ca1dfa9e00a9a54",
-                "8c5ab8169037fd55"
+                "8c5ab8169037fd55",
+                "9647cb3479bdec72"
             ]
         ]
     },
@@ -444,8 +445,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 660,
+        "x": 710,
+        "y": 600,
         "wires": [
             [
                 "1e96896f8debcfc0"
@@ -463,8 +464,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 720,
+        "x": 700,
+        "y": 660,
         "wires": [
             [
                 "b84a7395b574874b"
@@ -509,8 +510,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 960,
-        "y": 660,
+        "x": 980,
+        "y": 600,
         "wires": [
             []
         ]
@@ -553,17 +554,48 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 950,
+        "x": 970,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9647cb3479bdec72",
+        "type": "function",
+        "z": "4d8b63f9a305130a",
+        "name": "Query",
+        "func": "msg.topic = \"INSERT INTO clima (nombre,temperatura,humedad) VALUES ('\" + msg.payload.id +\"',\" + msg.payload.temp + \",\" + msg.payload.hum + \");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 720,
+        "wires": [
+            [
+                "1d1ce54955177e43"
+            ]
+        ]
+    },
+    {
+        "id": "1d1ce54955177e43",
+        "type": "mysql",
+        "z": "4d8b63f9a305130a",
+        "mydb": "30c15c85f5d3822c",
+        "name": "",
+        "x": 940,
         "y": 720,
         "wires": [
             []
         ]
     },
     {
-        "id": "f1868b0174764182",
+        "id": "1cf4394e3811019a",
         "type": "mqtt-broker",
-        "name": "Broker Público",
-        "broker": "52.57.47.134",
+        "name": "",
+        "broker": "mosquitto",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -598,6 +630,33 @@
         "className": ""
     },
     {
+        "id": "f1868b0174764182",
+        "type": "mqtt-broker",
+        "name": "Broker Público",
+        "broker": "52.57.47.134",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "8b45fd2a374b39e3",
         "type": "ui_group",
         "name": "Colaborativo",
@@ -607,6 +666,16 @@
         "width": 16,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "30c15c85f5d3822c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "mysql",
+        "port": "3306",
+        "db": "cursoIoT",
+        "tz": "-06:00",
+        "charset": "UTF8"
     },
     {
         "id": "d383a881e1cc9dd4",
